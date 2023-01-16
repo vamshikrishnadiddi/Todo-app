@@ -1,0 +1,59 @@
+<style>
+    .listt,
+    .up-button,
+    .del-button {
+        display: inline;
+    }
+
+    .make_block {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .Title {
+        width: 500px;
+        box-shadow: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        border-width: 1px;
+        display: block;
+        margin-bottom: 10px;
+        border-color: green;
+    }
+
+    .Adder {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: green;
+        margin-top: 5px;
+        margin-left: 400px;
+        width: 100px;
+        border-radius: 20px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+
+<body>
+
+    <h1>To Do App</h1>
+
+    <form action="/update/{{todo.sno}}" method="POST">
+        <div>
+            <input class="Title" type="text" name="title" value="{{todo.title}}" placeholder="Enter Todo...">
+            <input class="Title" type="text" name="desc" value="{{todo.desc}}" placeholder="Enter description...">
+            <button class="Adder" type="submit">Update</button>
+        </div>
+    </form>
+</body>
+
+</html>
